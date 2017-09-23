@@ -7,10 +7,6 @@
 </template>
 
 <script>
-import Vue from 'vue'
-import VueRouter from "vue-router"
-Vue.use(VueRouter)
-const router = new VueRouter();
 export default {
 	data() {
 		return {
@@ -23,7 +19,7 @@ export default {
 	    	this.$http.delete('/api/api/customers/'+ this.customerId).then(function(response) {
 	        	// 这里是处理正确的回调
 		        console.info(response);
-				alert('del success');
+				window.location.href = '/getmethod';
 		    }, function(response) {
 		        // 这里是处理错误的回调
 		        console.log(response)
@@ -32,7 +28,7 @@ export default {
 	},
 
 	mounted: function() {
-		router.push({ name: 'home', params: { userId: 123 }})
+		
 	}
 }
 </script>
