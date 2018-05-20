@@ -4,6 +4,7 @@ import getmethod from './modules/get/main.vue'
 import postmethod from './modules/post/main.vue'
 import delmethod from './modules/del/main.vue'
 import loadpostcss from './modules/loadpostcss/main.vue'
+import vuexex from './modules/vuexex/main.vue'
 
 const routerMaps = [{
         path: '/home',
@@ -33,6 +34,11 @@ const routerMaps = [{
     {
         path: '/loadpostcss',
         component: loadpostcss
+    },
+
+    {
+        path: '/vuexex',
+        component: vuexex
     }
 ]
 

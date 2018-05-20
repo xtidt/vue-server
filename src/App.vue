@@ -10,6 +10,7 @@
       <li><router-link to="/postmethod">使用 post request 方法</router-link></li>
       <li><router-link to="/delmethod">使用 del request 方法</router-link></li>
       <li><router-link to="/loadpostcss">使用 less 文件</router-link></li>
+      <li><router-link to="/vuexex">Vuex状态管理</router-link></li>
     </nav>
     <hr>
     <router-view class="view"></router-view>
